@@ -61,15 +61,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--acento-color);
+    background-color: #16213E;
     color: var(--secundario-fondo);
 }
 
 .logo {
     margin-left: 2rem;
     margin-top: 0.5rem;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 500px;
 }
 
 .logo-text {
@@ -109,11 +109,12 @@ main {
 
 .informacion {
     width: 90%;
+    background-color: #0143f7;
     height: 45rem;
     margin: auto;
     margin-top: 2rem;
-    background-color: var(--contenedor-fondo);
-    border: var(--bordes-color) 4px solid;
+    background-color: var(--acento-color);
+    border: var(--secundario-fondo) 4px solid;
     border-radius: 12px;
     background-size: cover;
     background-repeat: no-repeat;
