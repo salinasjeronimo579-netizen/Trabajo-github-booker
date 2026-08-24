@@ -1,0 +1,427 @@
+/* CONFIGURACIONES INICIALES */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fondo: #F5F0E8;
+    --navbar-fondo: #16213E;
+    --footer-fondo: #0F3460;
+    --secundario-fondo: #1A1A2E;
+    --acento-color: #C9A84C;
+    --s-acento-color: #8B2635;
+    --contenedor-fondo: #FFFFFF;
+    --hover-fondo: #EDE8DF;
+    --bordes-color: #C9A84C;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: var(--navbar-fondo);
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+    transition: 0.2s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--contenedor-fondo);
+    border: var(--bordes-color) 2px solid;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover {
+    background-color: var(--acento-color);
+    color: var(--secundario-fondo);
+}
+
+.logo {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    width: 80px;
+    height: 80px;
+}
+
+.logo-text {
+    margin-left: 1rem;
+    color: var(--contenedor-fondo);
+    margin-top: 2rem;
+    color: var(--acento-color);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+/* SUBTITULO DE BIENVENIDA */
+
+.subtitulo-bienvenida {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--navbar-fondo);
+    max-width: 60%;
+    margin: 0 auto 2rem auto;
+    line-height: 1.5;
+}
+
+
+/* INFORMACION */
+
+.informacion {
+    width: 90%;
+    height: 45rem;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--contenedor-fondo);
+    border: var(--bordes-color) 4px solid;
+    border-radius: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: background-position 0.5s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+#nombreCarrusel {
+    text-align: center;
+    color: var(--acento-color);
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1.5rem 1rem 0.2rem 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 100%);
+    backdrop-filter: blur(4px);
+    margin: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--acento-color);
+}
+
+
+
+.informacion p {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 2rem 2.5rem 2rem;
+    color: #F5F0E8;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.85);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+.informacion .btn {
+    position: absolute;
+    top: 45%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--contenedor-fondo);
+    border: 2px solid var(--bordes-color);
+    color: var(--acento-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.2s ease;
+}
+
+.informacion .btn:hover {
+    transform: scale(1.1);
+    background-color: var(--acento-color);
+    color: var(--secundario-fondo);
+}
+
+.informacion #btn-anterior {
+    left: 20px;
+}
+
+.informacion #btn-siguiente {
+    right: 20px;
+}
+
+/* SOBRE EL MUSEO */
+.sobre-museo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre-texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--acento-color);
+}
+
+.sobre-texto p {
+    color: var(--navbar-fondo);
+}
+
+.btn-museo {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--acento-color);
+    color: var(--secundario-fondo);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-museo:hover {
+    background-color: var(--hover-fondo);
+    color: var(--navbar-fondo);
+}
+
+.sobre-imagen img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--bordes-color);
+}
+
+
+/* GALERIA */
+
+.galeria {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5rem auto;
+}
+
+.galeria h2 {
+    grid-row: 1;
+    grid-column: 1/4;
+    text-align: center;
+    color: var(--acento-color);
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--contenedor-fondo);
+    width: 60%;
+    height: 35rem;
+    margin: auto;
+    margin-top: 30px;
+    border: var(--bordes-color) 4px solid;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-bottom: var(--bordes-color) 5px solid;
+
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.info-card p b {
+    font-size: 1.2rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-fondo);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--footer-fondo);
+    text-align: center;
+    color: var(--contenedor-fondo);
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-top: 2rem;
+}
+
+.texto-oculto {
+    opacity: 0 !important;
+    transform: translateY(15px) !important;
+}
+
+.desplazar-izq {
+    background-position: 43% center !important;
+}
+
+.desplazar-der {
+    background-position: 57% center !important;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-rows: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+        margin: 0;
+    }
+
+    .logo-text {
+        margin: 0.3rem 0 0 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .logo-text h1 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        margin: 0.5rem auto;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        margin-top: 7rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitulo-bienvenida {
+        font-size: 1.1rem;
+        max-width: 90%;
+    }
+
+    .informacion {
+        width: 95%;
+        height: 28rem;
+        margin-top: 1rem;
+    }
+
+    #nombreCarrusel {
+        font-size: 1.5rem;
+    }
+
+    .informacion p {
+        font-size: 1rem;
+        padding: 0 1rem 1.5rem 1rem;
+    }
+
+    .estadisticas {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .sobre-museo {
+        flex-direction: column;
+    }
+
+    .sobre-imagen {
+        flex: unset;
+        width: 100%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .galeria h2 {
+        grid-column: 1;
+    }
+
+    .card {
+        width: 85%;
+        height: auto;
+        min-height: 25rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    footer p {
+        margin-top: 0;
+    }
+}
