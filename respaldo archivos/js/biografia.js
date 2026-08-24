@@ -147,7 +147,7 @@ const bioPersonajes = [
         foto: "https://i.pinimg.com/736x/4e/98/71/4e987137bcb66449248888a1131171aa.jpg",
         foto2: "https://imgs.search.brave.com/BI1_d6bsFpRCCmh_JoX8AFpBQwzkivditpYszG3TBQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL09Y/N20yZDRMNWQwTUpI/WDI5RlNZX3ctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEU1T2pVM056c3lP/VGN3T0dZOWQyVmlj/QS0tL2h0dHBzOi8v/bWVkaWEuemVuZnMu/Y29tL2VzL2xhbmFj/aW9uLmNvbS5hci9l/YWZhZDRjNDZiY2E5/Zjc4ODgzZGU4Njc3/OTNlMjVkMA",
         nombre: "Abelardo de la Espriella",
-        epoca: "1964 – presente",
+        epoca: "1978 – presente",
         biografiaCorta: "El penalista más famoso de Colombia. Cartagenero de nacimiento, se convirtió en figura nacional defendiendo casos que nadie más quería tocar. Presencia fija en medios de comunicación, orador implacable y opinador sin filtro. Algunos ya lo ven como futuro presidente.",
         fraseCelebre: "\"En Colombia se condena al pobre y se absuelve al poderoso. Yo vengo a cambiar eso.\"",
         curiosidades: [
